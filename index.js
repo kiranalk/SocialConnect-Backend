@@ -6,7 +6,7 @@ import userRoutes from './routes/authRoutes.js'
 import cookieParser from 'cookie-parser'
 import postRoutes from './routes/postRoutes.js'
 
-dotenv.config()
+dotenv.config();
 
 const app = express()
 app.use(express.json()) 
@@ -18,7 +18,7 @@ app.use(cors({
     credentials:true
 }))
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT 
 
 //test Api(optional)
 app.get("/test",(req,res)=>{
