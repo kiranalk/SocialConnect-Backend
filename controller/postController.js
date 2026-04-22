@@ -128,7 +128,6 @@ export const getAllPosts = async (req, res) => {
         .sort({createdAt: -1})
         .skip(skip)
         .limit(limit)
-        .sort({createdAt: -1})
 
         const totalposts = await Post.countDocuments();
         const totalpages = Math.ceil(totalposts/limit);
